@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom, #db1d1d, #fbff05, #2aff05, #05e2ff);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+#game{
+    width: 100%;
+    height: 200px;
+    border: 2px solid #000;
+    position: relative;
+    padding: 10px 10px;
+    border-radius: 15px;
+    z-index: 100;
+    background: white;
+}
+#dino{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 150px;
+}
+.animation{
+    animation: jump 500ms;
+}
+@keyframes jump{
+    0%{
+        top: 150px;
+    }
+    30%{
+        top: 100px;
+    }
+    70%{
+        top: 100px;
+    }
+    100%{
+        top: 150px;
+    }
+}
+#cactus{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 150px;
+    left: 380px;
+    animation: block 1.5s infinite linear;
+}
+@keyframes block{
+    0%{
+        left: 380px;
+    }
+    100%{
+        left: -380px;
+    }
+}
